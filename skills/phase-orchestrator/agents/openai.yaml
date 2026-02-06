@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Orchestrator"
+  short_description: "Coordinate phase discuss/plan/execute flow"
+  default_prompt: "Use $phase-orchestrator to guide the next phase action."

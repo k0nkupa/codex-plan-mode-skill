@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Discuss"
+  short_description: "Clarify phase decisions and write context"
+  default_prompt: "Use $phase-discuss to collect phase decisions before planning."

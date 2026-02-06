@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Execute"
+  short_description: "Execute a phase plan and summarize"
+  default_prompt: "Use $phase-execute to implement the phase plan and write a summary."

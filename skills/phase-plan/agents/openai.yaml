@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Plan"
+  short_description: "Create an executable phase plan"
+  default_prompt: "Use $phase-plan to create a phase plan from context."

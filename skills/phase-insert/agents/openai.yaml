@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Insert"
+  short_description: "Insert a new phase into the roadmap"
+  default_prompt: "Use $phase-insert to add a new phase between existing phases."

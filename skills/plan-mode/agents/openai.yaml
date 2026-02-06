@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Mode"
+  short_description: "Decision-complete plans with file output"
+  default_prompt: "Use $plan-mode to create a decision-complete execution plan."
