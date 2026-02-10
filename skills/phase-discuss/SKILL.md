@@ -22,6 +22,7 @@ Use this skill to clarify phase requirements and decisions, then write `CONTEXT.
 
 3. **Prepare phase directory**
    - Read canonical `phase_dir` and `phase_name` from `planning/STATE.md` under `phases.<phase>`.
+   - If `preferences.bootstrap.auto` is true in state, treat this canonical `phase_dir` as authoritative.
    - If the phase entry is missing in state, create it from `planning/ROADMAP.md`:
      - Set `phase_name`, `phase_dir`, `phase_status: pending`, and `step_status` keys.
    - If `phase_dir` is missing, compute it once from `<phase>-<phase_name-slug>` and persist it in `planning/STATE.md`.

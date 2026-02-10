@@ -30,10 +30,16 @@ Use this skill to guide the next phase action and keep `planning/` artifacts con
      - `phase_status`
      - `step_status` (`discuss`, `plan`, `execute`)
    - Create `phase_dir` once here and treat it as source of truth. Downstream skills must never recompute slugs.
+   - Respect and preserve preferences if present:
+     - `preferences.bootstrap.auto`
+     - `preferences.research.enabled`
+     - `preferences.research.mode`
+   - If preferences are missing, initialize defaults from `references/state-template.md`.
    - Default `current_phase` to the first phase and `current_step` to `discuss`.
 
 4. **Determine next action**
    - Read `planning/STATE.md` as YAML.
+   - If `preferences.bootstrap.auto` is true, treat plan-mode bootstrap artifacts (`ROADMAP.md`, `STATE.md`) as authoritative and avoid recomputing phase metadata unless invalid.
    - Auto-advance using completion markers (not file existence):
      - `<phase_dir>/CONTEXT.md` counts as complete only if frontmatter has `step: discuss` and `status: complete`.
      - `<phase_dir>/PLAN.md` counts as complete only if frontmatter has `step: plan` and `status: complete`.

@@ -1,5 +1,11 @@
 schema_version: "1.0"
 numbering_policy: "integer_or_decimal"
+preferences:
+  research:
+    enabled: true
+    mode: "ecosystem"
+  bootstrap:
+    auto: true
 current_phase: "01"
 current_step: "discuss"
 phases:
